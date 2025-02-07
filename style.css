@@ -1,11 +1,10 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-
 /* .................................navbar............................. */
-nav{
+nav {
     width: 100%;
     height: 14vh;
     background: #000000;
@@ -18,44 +17,50 @@ nav{
 
 
 /* .................Start logo............... */
-.logo{
+.logo {
     height: 100%;
 }
-.logo>a{
+
+.logo>a {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo>a>img{
+
+.logo>a>img {
     width: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* .................end logo............... */
 
 
 /* .............start main menu............... */
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     gap: 12px;
 }
-.pages{
+
+.pages {
     display: flex;
     align-items: end;
     justify-content: center;
 }
-.page{
+
+.page {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0px 10px;
 }
-.page>a{
+
+.page>a {
     padding: 5px 10px;
     cursor: pointer;
     font-family: "Inter", serif;
@@ -65,11 +70,14 @@ nav{
     font-size: 16px;
     text-decoration: none;
 }
-#bars{
+
+#bars {
     display: none;
 
 }
-.bars, .xmark{
+
+.bars,
+.xmark {
     display: none;
     padding: 15px;
 }
@@ -77,12 +85,13 @@ nav{
 /* .............end main menu................ */
 /* .............start buttons................ */
 
-.buttons{
+.buttons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.btn{
+
+.btn {
     height: 50px;
     display: flex !important;
     justify-content: center;
@@ -98,7 +107,8 @@ nav{
     text-decoration: none;
     border: 1px solid white !important;
 }
-#Btn2{
+
+#Btn2 {
     background: #ed1c24;
     border: 1px solid #ed1c24 !important;
     display: flex;
@@ -106,21 +116,24 @@ nav{
     align-items: center;
     gap: 10px;
 }
-#Btn2>i{
-    font-size: 25px;   
+
+#Btn2>i {
+    font-size: 25px;
 }
+
 /* .............end buttons................ */
 
 /* ........... responsive navbar ............. */
 
 @media screen and (max-width: 992px) {
-    nav{
+    nav {
         position: relative;
         justify-content: space-between;
         padding: 0;
         height: 75px;
     }
-    .pages{
+
+    .pages {
         width: 200px;
         position: absolute;
         background-color: rgb(255, 255, 255);
@@ -133,27 +146,33 @@ nav{
         transform-origin: left;
         z-index: 100;
     }
-    .page{
+
+    .page {
         border-bottom: 2px solid rgba(0, 0, 0, 0.247);
         display: flex;
         justify-content: left;
     }
-    .page>a{
+
+    .page>a {
         color: black;
         display: flex;
         justify-content: left;
         align-items: center;
         width: 100%;
     }
-    .bars, .xmark{
+
+    .bars,
+    .xmark {
         display: block;
         cursor: pointer;
     }
-    .xmark{
+
+    .xmark {
         display: flex;
         justify-content: right;
     }
-    #Btn1{
+
+    #Btn1 {
         border: 0;
         height: auto;
         padding: 5px 10px;
@@ -167,7 +186,8 @@ nav{
         display: flex;
         justify-content: left;
     }
-    #Btn2{
+
+    #Btn2 {
         font-size: 12px;
         height: 35px;
         display: flex;
@@ -183,27 +203,34 @@ nav{
         gap: 2px;
         text-decoration: none;
     }
-    #Btn>i{
+
+    #Btn>i {
         font-size: 14;
     }
-    .fa-bars, .fa-xmark{
+
+    .fa-bars,
+    .fa-xmark {
         color: white;
-        font-size:24px;
+        font-size: 24px;
         padding: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
-    } 
-    .fa-xmark{
+    }
+
+    .fa-xmark {
         color: #000000;
     }
-    #bars:checked ~ div.pages{
+
+    #bars:checked~div.pages {
         transform: scaleX(100%);
     }
-    .buttons{
+
+    .buttons {
         margin-right: 25px;
     }
-    .logo>a>img{
+
+    .logo>a>img {
         width: 90px;
     }
 }
@@ -213,9 +240,41 @@ nav{
 
 
 
-/* ..................................... start slider .......................................... */
-
-
-/* ..................................... end slider .......................................... */
-
-
+/* ..................................... start container .......................................... */
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #000000;
+}
+.card-body{
+    background-color: #000000;
+}
+.card> img{
+    padding: 10px;
+}
+.card{
+    border: 0px !important;
+    margin-top: 20px;
+}
+.cardBtn{
+    height: 50px;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center !important;
+    padding: 0% 20px;
+    border-radius: 50px !important;
+    cursor: pointer;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white !important;
+    font-size: 14px;
+    background-color: #000000;
+    text-decoration: none;
+    border: 1px solid white !important;
+}
+/* ..................................... end container .......................................... */
